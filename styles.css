@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background: linear-gradient(180deg, #060307 23.04%, #090a26 55.93%);
+}
+
 header {
   background-image: url(assets/Zhang-Yiwei-CGI-women-short-hair-purple-hair-blue-eyes-2185487-wallhere\ 1.svg);
   background-size: cover;
@@ -44,6 +48,11 @@ header {
   list-style: none;
   display: flex;
   gap: 25px;
+}
+
+.nav-bar nav ul li a:hover {
+  border-bottom: #ffffff 2px solid;
+  padding-bottom: 10px;
 }
 
 .nav-bar nav ul li a {
@@ -160,4 +169,123 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   color: #000000;
+}
+
+footer {
+  height: 497px;
+  color: #ffffff;
+  padding-top: 110px;
+  border-top: #502356 1px solid;
+}
+
+.footer-pt {
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #502356 1px solid;
+  padding-bottom: 110px;
+}
+
+.foot-logo-text {
+  display: flex;
+  flex-direction: column;
+  width: 391px;
+  height: 181px;
+  opacity: 1;
+  gap: 32px;
+}
+
+.foot-logo-text img {
+  width: 91px;
+  height: 48px;
+  opacity: 1;
+}
+
+.foot-logo-text p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.socials {
+  display: flex;
+  width: 172px;
+  height: 24px;
+  opacity: 1;
+  gap: 50px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.foot-column-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.foot-column-wrap h3 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.foot-column-wrap ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.foot-column-wrap ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.foot-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+}
+
+.foot-footer p {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.foot-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.foot-footer ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
 }
