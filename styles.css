@@ -9,6 +9,8 @@ body {
   background: linear-gradient(180deg, #060307 23.04%, #090a26 55.93%);
 }
 
+/* part that will be changed */
+
 header {
   background-image: url(assets/Zhang-Yiwei-CGI-women-short-hair-purple-hair-blue-eyes-2185487-wallhere\ 1.svg);
   background-size: cover;
@@ -17,6 +19,8 @@ header {
   background-position: center;
   height: 100vh;
 }
+
+/* till here i guess */
 
 .nav-bar {
   display: flex;
@@ -195,6 +199,7 @@ footer {
   height: 181px;
   opacity: 1;
   gap: 32px;
+  padding-right: 50px;
 }
 
 .foot-logo-text img {
@@ -288,4 +293,124 @@ footer {
   line-height: 100%;
   letter-spacing: 0%;
   color: #ffffff;
+}
+
+section {
+  margin-top: 150px;
+}
+
+.social-pad-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 1440;
+  height: 176;
+  opacity: 1;
+}
+
+.social-pad-wrap p {
+  color: #ffffff;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.socials-wrp {
+  display: flex;
+  justify-content: center;
+  height: 152px;
+  opacity: 1;
+  top: 45px;
+  gap: 20px;
+}
+
+.img-box-pt {
+  width: 183px;
+  height: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box-pt img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.implant-pad-wrap {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  height: 656px;
+  position: relative;
+}
+
+.implant-pad-wrap p {
+  color: #ffffff;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.implant-crd-wrp {
+  display: flex;
+  justify-content: center;
+  height: 537px;
+  opacity: 1;
+  top: 119px;
+  gap: 20px;
+  left: 121px;
+  position: absolute;
+}
+
+.impl-card {
+  width: 386px;
+  height: 537px;
+  opacity: 1;
+  border: solid 1px #e15cf2;
+  position: relative;
+}
+
+.impl-card img {
+  width: 283px;
+  height: 246px;
+  opacity: 1;
+  top: 60px;
+  left: 52px;
+  position: absolute;
+}
+
+.impl-card h3 {
+  color: white;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  position: absolute;
+  top: 323px;
+  left: 113px;
+}
+
+.impl-card p {
+  color: white;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  position: absolute;
+  top: 394px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
