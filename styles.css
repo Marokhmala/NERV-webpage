@@ -96,15 +96,22 @@ header {
 
 .welcome {
   position: absolute;
-  width: 900px;
+  max-width: 1081px;
   height: 327px;
-  top: 250px;
+  top: 348px;
   left: 179.16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .welcome {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .welcome h1 {
@@ -349,6 +356,7 @@ section {
   opacity: 1;
   height: 656px;
   position: relative;
+  width: auto;
 }
 
 .implant-pad-wrap p {
@@ -368,12 +376,12 @@ section {
   opacity: 1;
   top: 119px;
   gap: 20px;
-  left: 121px;
   position: absolute;
+  width: 100%
 }
 
 .impl-card {
-  width: 386px;
+  width: 350px;
   height: 537px;
   opacity: 1;
   border: solid 1px #e15cf2;
