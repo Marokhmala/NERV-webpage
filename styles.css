@@ -191,7 +191,7 @@ header {
   color: #000000;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1130px) {
   .welcome {
     top: 500px;
     align-items: end;
@@ -727,7 +727,7 @@ left: 998.34px; */
   position: absolute;
   /* top: clamp(100px, 20vh, 235px); */
   top: clamp(120px, 18vw, 235px);
-  left: clamp(300px, calc(70vw - 180px), 852px);
+  left: clamp(200px, calc(70vw - 180px), 852px);
   display: flex;
   flex-direction: column;
   margin-right: 30px;
@@ -743,6 +743,12 @@ left: 998.34px; */
   max-width: 465px;
   min-height: 467px;
   margin-bottom: 48px;
+}
+
+@media (max-width: 540px) {
+  .welcome-about p {
+    font-size: 15px;
+  }
 }
 
 .welcome-about button {
@@ -801,6 +807,13 @@ left: 998.34px; */
   font-size: 18px;
   line-height: 38.9px;
   letter-spacing: 0%;
+}
+
+@media (max-width: 540px) {
+  .abtpage-main-prt p {
+    font-size: 15px;
+    padding-right: 20px;
+  }
 }
 
 .abtpage-main-prt button {
@@ -929,6 +942,5 @@ input::placeholder {
   letter-spacing: 0%;
   margin-top: 10px;
 }
-
 
 /* im so done with this... */
