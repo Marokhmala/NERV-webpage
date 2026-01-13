@@ -16,7 +16,8 @@ header {
   background-size: cover;
   color: #ffffff;
   background-position: center;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 1034px;
 }
 
 /* till here i guess */
@@ -123,6 +124,12 @@ header {
   gap: 40px;
 }
 
+@media (max-width: 570px) {
+  .welcome {
+    margin-left: 60px;
+  }
+}
+
 .welcome h1 {
   font-weight: 700;
   font-style: Bold;
@@ -194,7 +201,6 @@ header {
 @media (max-width: 1130px) {
   .welcome {
     top: 500px;
-    align-items: end;
     margin-right: 20px;
   }
 
@@ -324,6 +330,12 @@ footer {
   padding: 30px 120px;
 }
 
+@media (max-width: 540px) {
+  .foot-footer {
+    padding-left: 50px;
+  }
+}
+
 .foot-footer p {
   font-weight: 700;
   font-style: Bold;
@@ -358,8 +370,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 1440;
-  height: 176;
+  width: 100%;
+  min-height: 176px;
   opacity: 1;
 }
 
@@ -376,10 +388,16 @@ section {
 .socials-wrp {
   display: flex;
   justify-content: center;
-  height: 152px;
+  min-height: 152px;
   opacity: 1;
-  top: 45px;
   gap: 20px;
+}
+
+@media(max-width: 625px) {
+  .socials-wrp {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .img-box-pt {
@@ -404,7 +422,7 @@ section {
   display: flex;
   flex-direction: column;
   opacity: 1;
-  height: 656px;
+  min-height: 656px;
   width: auto;
 }
 
@@ -422,11 +440,18 @@ section {
 .implant-crd-wrp {
   display: flex;
   justify-content: center;
-  height: 537px;
+  min-height: 537px;
   opacity: 1;
   gap: 20px;
   margin-left: 81px;
   margin-right: 81px;
+}
+
+@media (max-width: 960px) {
+  .implant-crd-wrp {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .impl-card {
@@ -442,10 +467,10 @@ section {
 }
 
 .impl-card img {
-  width: 283px;
-  height: 246px;
   margin-top: 60px;
 }
+
+/* there are some styles of these imgs in html file */
 
 .impl-card h3 {
   color: white;
@@ -475,7 +500,7 @@ section {
   display: flex;
   flex-direction: column;
   opacity: 1;
-  height: 713px;
+  min-height: 713px;
   width: auto;
 }
 
@@ -493,7 +518,7 @@ section {
 .most-pop-wrper {
   display: flex;
   justify-content: center;
-  height: 594px;
+  min-height: 594px;
   opacity: 1;
   gap: 20px;
 }
@@ -511,8 +536,6 @@ section {
 }
 
 .pop-card-wrp img {
-  width: 283px;
-  height: 246px;
   margin-top: 60px;
 }
 
@@ -562,6 +585,18 @@ section {
   margin-top: 40px;
 }
 
+@media (max-width: 960px) {
+  .most-pop-wrper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow-left,
+  .arrow-right,
+  .dots {
+    display: none;
+  }
+}
+
 /* we continue from here. next section - */
 
 .we-are-who {
@@ -599,6 +634,12 @@ section {
   position: absolute;
   top: 206px;
   left: calc(80vw - 180px);
+}
+
+@media (max-width: 760px) {
+  .glasses-col {
+    left: 20px;
+  }
 }
 
 .glasses-col p {
@@ -678,6 +719,15 @@ left: 998.34px; */
     gap: 40px;
   }
 }
+
+@media (max-width: 960px) {
+  .mem-part1,
+  .mem-part2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .member-card {
   display: flex;
   flex-direction: column;
@@ -719,7 +769,7 @@ left: 998.34px; */
   background-size: cover;
   color: #ffffff;
   background-position: center;
-  height: 100vh;
+  height: 1034px;
   position: relative;
 }
 
@@ -731,6 +781,15 @@ left: 998.34px; */
   display: flex;
   flex-direction: column;
   margin-right: 30px;
+}
+
+@media (max-width: 1130px) {
+  .welcome-about {
+    top: clamp(100px, 25vh, 300px);
+    right: 20px;
+    margin-right: 20px;
+    align-items: end;
+  }
 }
 
 .welcome-about p {
@@ -839,7 +898,7 @@ left: 998.34px; */
   background-size: cover;
   color: #ffffff;
   background-position: center;
-  height: 100vh;
+  height: 1034px;
   position: relative;
 }
 
