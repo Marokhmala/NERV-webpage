@@ -229,7 +229,7 @@ footer {
 .foot-logo-text {
   display: flex;
   flex-direction: column;
-  width: 391px;
+  max-width: 391px;
   height: 181px;
   opacity: 1;
   gap: 32px;
@@ -332,7 +332,7 @@ footer {
 
 @media (max-width: 540px) {
   .foot-footer {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
 
@@ -349,6 +349,12 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+}
+
+@media (max-width: 430px){
+  .foot-footer ul {
+    gap: 30px
+  }
 }
 
 .foot-footer ul li a {
@@ -783,12 +789,11 @@ left: 998.34px; */
   margin-right: 30px;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 580px) {
   .welcome-about {
-    top: clamp(100px, 25vh, 300px);
-    right: 20px;
+    margin-top: 380px;
+    left: 5%;
     margin-right: 20px;
-    align-items: end;
   }
 }
 
@@ -800,13 +805,13 @@ left: 998.34px; */
   line-height: 38.9px;
   letter-spacing: 0%;
   max-width: 465px;
-  min-height: 467px;
   margin-bottom: 48px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .welcome-about p {
     font-size: 15px;
+    line-height: 30px;
   }
 }
 
@@ -872,6 +877,7 @@ left: 998.34px; */
   .abtpage-main-prt p {
     font-size: 15px;
     padding-right: 20px;
+    line-height: 30px;
   }
 }
 
@@ -912,6 +918,13 @@ left: 998.34px; */
   gap: 25px;
   margin-left: clamp(20px, 32vw, 465px);
   /* padding-right: 465px; */
+}
+
+@media (max-width: 600px) {
+  .main-box {
+    margin-top: 30%;
+    margin-left: 0;
+  }
 }
 
 .main-box h3 {
