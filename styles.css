@@ -215,6 +215,28 @@ header {
   }
 }
 
+@media (max-width: 350px) {
+  .welcome {
+    margin-left: 10px;
+  }
+
+  .welcome h1 {
+    max-width: 346px;
+    font-size: 40px;
+  }
+
+  .welcome p {
+    font-size: 15px;
+  }
+
+  .button-dl {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 20px;
+  }
+}
+
 /* footer */
 
 footer {
@@ -444,7 +466,6 @@ section {
   flex-direction: column;
   opacity: 1;
   min-height: 656px;
-  width: auto;
 }
 
 .implant-pad-wrap p {
@@ -467,6 +488,14 @@ section {
   /* margin-left: 81px;
   margin-right: 81px; */
   width: auto;
+}
+
+@media (min-width: 961px) and (max-width: 1413px) {
+  .implant-crd-wrp {
+    margin-left: 101px;
+    margin-right: 101px;
+  }
+
 }
 
 @media (max-width: 960px) {
