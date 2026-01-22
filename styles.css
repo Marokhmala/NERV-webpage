@@ -36,6 +36,7 @@ header {
   opacity: 1;
   top: 27px;
   left: 91px;
+  cursor: pointer;
 }
 
 .nav-wrapper {
@@ -335,6 +336,10 @@ footer {
   color: #ffffff;
 }
 
+.foot-column-wrap ul li a:hover {
+  color: #E15CF2;
+}
+
 @media (max-width: 1000px) {
   .footer-pt {
     flex-direction: column;
@@ -434,14 +439,9 @@ section {
   min-height: 152px;
   opacity: 1;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 625px) {
-  .socials-wrp {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .img-box-pt {
   width: 183px;
@@ -525,6 +525,7 @@ section {
 
 .impl-card img {
   margin-top: 60px;
+  cursor: pointer;
 }
 
 /* there are some styles of these imgs in html file */
@@ -606,6 +607,7 @@ section {
 
 .pop-card-wrp img {
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .pop-card-wrp h3 {
@@ -891,6 +893,7 @@ left: 998.34px; */
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+  cursor: pointer;
 }
 
 .aboutpage-sect1 {
