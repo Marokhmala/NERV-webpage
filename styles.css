@@ -160,8 +160,8 @@ header {
 }
 
 .prpl-bt {
-  width: 220;
-  height: 48;
+  width: 220px;
+  height: 48px;
   opacity: 1;
   gap: 10px;
   padding-top: 13px;
@@ -180,8 +180,8 @@ header {
 }
 
 .wht-bt {
-  width: 220;
-  height: 48;
+  width: 220px;
+  height: 48px;
   opacity: 1;
   gap: 10px;
   padding-top: 13px;
@@ -1082,3 +1082,343 @@ input::placeholder {
 }
 
 /* im so done with this... */
+
+
+
+
+/* page - products */
+
+.page-products {
+  background-image: url(assets/page-products-background.jpg);
+  background-size: cover;
+  color: #ffffff;
+  background-position: center;
+  height: 700px;
+}
+
+/* code by ai */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+.hero-image-slide {
+  width: 50%;
+  height: 400px;
+  background: #2a2a3a;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.hero-text {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #E15CF2;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.cta-button {
+  width: 220px;
+  height: 48px;
+  opacity: 1;
+  gap: 10px;
+  padding-top: 13px;
+  padding-right: 33px;
+  padding-bottom: 13px;
+  padding-left: 33px;
+  cursor: pointer;
+  border: none;
+  background-color: #E15CF2;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #c445d0;
+}
+
+
+/* Section 2: Detailed Description */
+.detailed-desc {
+  padding: 100px 120px;
+  background: #0a0a0a;
+  color: white;
+}
+
+.desc-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.desc-text {
+  width: 50%;
+}
+
+.desc-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #E15CF2;
+}
+
+.desc-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.features {
+  list-style: none;
+}
+
+.features li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.features li:before {
+  content: "▶";
+  color: #E15CF2;
+  position: absolute;
+  left: 0;
+}
+
+.desc-image {
+  width: 50%;
+  height: 400px;
+  background: #2a2a3a;
+  border-radius: 10px;
+}
+
+
+/* Section 3: Product Carousel */
+.product-carousel {
+  padding: 100px 120px;
+  background: #1a1a2e;
+  color: white;
+}
+
+.product-carousel h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #E15CF2;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.product-card {
+  min-width: calc(33.333% - 20px);
+  background: #2a2a3a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background: #3a3a4a;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  color: #E15CF2;
+}
+
+.product-card p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #E15CF2;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(225, 92, 242, 0.8);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+
+/* Section 4: Lungs Advertisement */
+.lungs-ad {
+  height: 500px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #2a1a3e 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.lungs-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+.lungs-text {
+  width: 60%;
+}
+
+.lungs-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #E15CF2;
+}
+
+.lungs-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.lungs-image {
+  width: 40%;
+  height: 300px;
+  background: #2a2a3a;
+  border-radius: 10px;
+}
+
+/* Section 5: Latest Products */
+.latest-products {
+  padding: 100px 120px;
+  background: #0a0a0a;
+  color: white;
+}
+
+.latest-products h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #E15CF2;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.latest-card {
+  background: #2a2a3a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.latest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(225, 92, 242, 0.3);
+}
+
+.latest-image {
+  width: 100%;
+  height: 200px;
+  background: #3a3a4a;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.latest-card h3 {
+  margin-bottom: 10px;
+  color: #E15CF2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-ad, .detailed-desc, .product-carousel, .lungs-ad, .latest-products {
+    padding: 80px 60px;
+  }
+  
+  .hero-content, .desc-content, .lungs-content {
+    flex-direction: column;
+  }
+  
+  .hero-image-slide, .hero-text, .desc-text, .desc-image, .lungs-text, .lungs-image {
+    width: 100%;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-ad, .detailed-desc, .product-carousel, .lungs-ad, .latest-products {
+    padding: 60px 30px;
+  }
+  
+  .product-card {
+    min-width: calc(100% - 20px);
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
