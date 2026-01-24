@@ -20,13 +20,20 @@
             <img src="assets/nerv 1.svg" alt="NERV Logo" />
           </a>
         </div>
+
+        <!-- Add burger menu button -->
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="nav-wrapper">
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="#wikis">Wikis</a></li>
-              <li><a href="#sales">Sales</a></li>
               <li><a href="about.html">About us</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -43,19 +50,30 @@
 
       <!-- code by ai -->
 
-      <div class="hero-content">
-        <div class="hero-image-slide">
-          <!-- Image will be added via CSS background -->
+      <section class="hero-ad">
+        <div class="hero-content">
+          <div class="hero-image-slide">
+            <div class="hero-image-bg"></div>
+            <div class="hero-image-foreground">
+              <!-- Your heart image goes here -->
+              <!-- Make sure your image has transparent background (PNG format) -->
+              <img
+                src="assets/prdct-art-heart.png"
+                alt="Artificial Heart"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1>EVA-MK.IV Mechanical Heart</h1>
+            <p>
+              The pinnacle of cybernetic organ technology. Beat with the rhythm
+              of the future.
+            </p>
+            <button class="cta-button">ORDER NOW</button>
+          </div>
         </div>
-        <div class="hero-text">
-          <h1>EVA-MK.IV Mechanical Heart</h1>
-          <p>
-            The pinnacle of cybernetic organ technology. Beat with the rhythm of
-            the future.
-          </p>
-          <button class="cta-button">ORDER NOW</button>
-        </div>
-      </div>
+      </section>
     </header>
 
     <!-- Section 2: Detailed Description -->
@@ -76,7 +94,7 @@
           </ul>
         </div>
         <div class="desc-image">
-          <!-- Detailed image will be added via CSS -->
+          <img src="assets/prdct-art-heart-details.png" alt="Artificial Heart Details">
         </div>
       </div>
     </section>
