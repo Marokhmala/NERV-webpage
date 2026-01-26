@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NERV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="page-wikis">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/nerv 1.svg" alt="NERV Logo" />
+          </a>
+        </div>
+
+        <!-- Add burger menu button -->
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-wrapper">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="wikis.html">Wikis</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="bar-cart">
+            <img src="assets/img-search.svg" alt="Search Bar" />
+            <img src="assets/img-cart.svg" alt="Shopping Cart" />
+          </div>
+          <div class="sign-in">
+            <button>SIGN IN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ai -->
+    <main class="wiki-page">
+      <!-- Section 1: Header with Search -->
+      <section class="wiki-header">
+        <div class="header-content">
+          <h1>How does everything work</h1>
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="Search documentation..."
+              class="search-input"
+            />
+            <button class="search-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Wiki Categories -->
+      <section class="wiki-categories">
+        <div class="category-grid">
+          <!-- Getting Started Card -->
+          <a href="#getting-started" class="category-card">
+            <div class="card-icon">🚀</div>
+            <h3>Getting Started</h3>
+            <p>
+              Learn the basics of NERV technology and how to begin your
+              cybernetic journey
+            </p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <!-- Tutorials Card -->
+          <a href="#tutorials" class="category-card">
+            <div class="card-icon">📚</div>
+            <h3>Tutorials</h3>
+            <p>
+              Step-by-step guides for installation, configuration, and
+              maintenance
+            </p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <!-- FAQ Card -->
+          <a href="#faq" class="category-card">
+            <div class="card-icon">❓</div>
+            <h3>FAQ</h3>
+            <p>Frequently asked questions about our products and services</p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <!-- Troubleshooting Card -->
+          <a href="#troubleshooting" class="category-card">
+            <div class="card-icon">🔧</div>
+            <h3>Troubleshooting</h3>
+            <p>Solve common issues with your cybernetic enhancements</p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <!-- API Documentation Card -->
+          <a href="#api" class="category-card">
+            <div class="card-icon">⚙️</div>
+            <h3>API Documentation</h3>
+            <p>Technical documentation for developers and integrators</p>
+            <div class="card-arrow">→</div>
+          </a>
+
+          <!-- Safety Guidelines Card -->
+          <a href="#safety" class="category-card">
+            <div class="card-icon">🛡️</div>
+            <h3>Safety Guidelines</h3>
+            <p>Important safety protocols and best practices</p>
+            <div class="card-arrow">→</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section 3: FAQ Accordion (HTML-only) -->
+      <section class="wiki-faq">
+        <h2>Most Asked Questions</h2>
+        <div class="faq-container">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle" />
+            <label for="faq1" class="faq-question">
+              <span>How long does cybernetic implant surgery take?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Most standard implants take 2-4 hours. Complex procedures like
+                full organ replacement may take 6-8 hours. Recovery time varies
+                from 2-6 weeks depending on the implant.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle" />
+            <label for="faq2" class="faq-question">
+              <span>Is there any risk of cybernetic rejection?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Our biocompatible materials have a rejection rate of less than
+                0.01%. All implants undergo rigorous compatibility testing
+                before installation.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle" />
+            <label for="faq3" class="faq-question">
+              <span>How often do cybernetic parts need maintenance?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Standard maintenance is required every 6 months. Self-diagnostic
+                systems alert you when attention is needed. Most implants have a
+                10-year warranty.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-toggle" />
+            <label for="faq4" class="faq-question">
+              <span>Can cybernetic implants be upgraded?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Yes, most NERV implants are designed for future upgrades.
+                Software updates are delivered wirelessly, while hardware
+                upgrades require clinic visits.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq5" class="faq-toggle" />
+            <label for="faq5" class="faq-question">
+              <span>Are cybernetic enhancements covered by insurance?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Many health plans cover medically necessary implants. We work
+                with most major insurers. Contact our support team for specific
+                coverage information.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <input type="checkbox" id="faq6" class="faq-toggle" />
+            <label for="faq6" class="faq-question">
+              <span>What's the lifespan of a mechanical heart?</span>
+              <span class="faq-arrow">›</span>
+            </label>
+            <div class="faq-answer">
+              <p>
+                Our EVA-MK.IV Mechanical Heart has an expected lifespan of 50+
+                years with proper maintenance, far exceeding biological
+                alternatives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-pt">
+        <div class="foot-logo-text">
+          <img src="assets/nerv 1.svg" alt="NERV Logo" />
+          <p>
+            We are the inventors of innovative tools, We strive to always be one
+            step ahead in the future to take care of your comfort and make your
+            life as comfortable as possible.
+          </p>
+          <div class="socials">
+            <img src="assets/facebook.svg" alt="Facebook Logo" />
+            <img src="assets/instagram.svg" alt="Instagram Logo" />
+            <img src="assets/twitter.svg" alt="Twitter Logo" />
+          </div>
+        </div>
+        <div class="foot-column-wrap">
+          <div class="nav-col">
+            <h3>Navigate</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#company">Company</a></li>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="sup-col">
+            <h3>Support Us</h3>
+            <ul>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact-us">Contact us</a></li>
+              <li><a href="#support-center">Support Center</a></li>
+              <li><a href="#security">Security</a></li>
+            </ul>
+          </div>
+          <div class="part-col">
+            <h3>Partner</h3>
+            <ul>
+              <li><a href="#our-partner">Our Partner</a></li>
+              <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot-footer">
+        <p>Xborg 2022 All Rights Reserved</p>
+        <nav>
+          <ul>
+            <li><a href="#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#sitemap">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

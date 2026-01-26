@@ -1137,8 +1137,8 @@ input::placeholder {
   width: 80%;
   height: 80%;
   border-radius: 15px;
-  border: 1px solid rgba(225, 92, 242, 0.3);
-  box-shadow: 0 0 50px rgba(225, 92, 242, 0.2);
+  border: 1px solid rgba(177, 54, 193, 0.82);
+  box-shadow: 0 0 50px rgba(224, 92, 242, 0.352);
 }
 
 /* Foreground image - will pop out */
@@ -1213,7 +1213,6 @@ input::placeholder {
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s;
-  border-radius: 5px;
   box-shadow: 0 5px 20px rgba(225, 92, 242, 0.4);
   position: relative;
   overflow: hidden;
@@ -1228,29 +1227,9 @@ input::placeholder {
   transform: translateY(0);
 }
 
-/* Optional: Add cyberpunk-style scan lines to the entire section */
-.hero-ad::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(225, 92, 242, 0.03) 50%
-  );
-  background-size: 100% 4px;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.3;
-}
-
 /* Section 2: Detailed Description */
 .detailed-desc {
   padding: 100px 120px;
-  background: #0a0a0a;
   color: white;
 }
 
@@ -1293,16 +1272,26 @@ input::placeholder {
 }
 
 .desc-image img {
-  height: 700px;
+  max-height: 700px;
   border-radius: 5px;
   border: #91449b 2px solid;
   box-shadow: 0 0 20px rgba(225, 92, 242, 0.5);
 }
 
+@media (max-width: 630px) {
+  .desc-image img {
+    max-height: 400px;
+  }
+
+  .desc-text,
+  .desc-image {
+    width: 100%;
+  }
+}
+
 /* Section 3: Product Carousel */
 .product-carousel {
   padding: 100px 120px;
-  background: #1a1a2e;
   color: white;
 }
 
@@ -1310,7 +1299,7 @@ input::placeholder {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #e15cf2;
+  color: #ffffff;
 }
 
 .carousel-container {
@@ -1327,23 +1316,27 @@ input::placeholder {
 
 .product-card {
   min-width: calc(33.333% - 20px);
-  background: #2a2a3a;
-  border-radius: 10px;
+  border: #E15CF2 2px solid;
   padding: 20px;
   text-align: center;
 }
 
 .card-image {
-  width: 100%;
-  height: 200px;
-  background: #3a3a4a;
+  height: 180px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  overflow: hidden;      /* VERY important */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills card, crops if needed */
+  display: block;
 }
 
 .product-card h3 {
   margin-bottom: 10px;
-  color: #e15cf2;
+  color: #ffffff;
 }
 
 .product-card p {
@@ -1361,12 +1354,8 @@ input::placeholder {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(225, 92, 242, 0.8);
-  color: white;
+  background: transparent;
   border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 10;
@@ -1405,7 +1394,7 @@ input::placeholder {
 .lungs-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #e15cf2;
+  color: #ffffff;
 }
 
 .lungs-text p {
@@ -1417,14 +1406,16 @@ input::placeholder {
 .lungs-image {
   width: 40%;
   height: 300px;
-  background: #2a2a3a;
-  border-radius: 10px;
+  background-image: url(assets/prdct-art-lungs.jpg);
+  background-size: cover;
+  background-position: center;
+  border: #E15CF2 2px solid;
+  box-shadow: 0 0 20px rgba(225, 92, 242, 0.5);
 }
 
 /* Section 5: Latest Products */
 .latest-products {
   padding: 100px 120px;
-  background: #0a0a0a;
   color: white;
 }
 
@@ -1432,7 +1423,7 @@ input::placeholder {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #e15cf2;
+  color: #ffffff;
 }
 
 .products-grid {
@@ -1442,8 +1433,7 @@ input::placeholder {
 }
 
 .latest-card {
-  background: #2a2a3a;
-  border-radius: 10px;
+  border: #E15CF2 2px solid;
   padding: 20px;
   text-align: center;
   transition:
@@ -1457,11 +1447,16 @@ input::placeholder {
 }
 
 .latest-image {
-  width: 100%;
-  height: 200px;
-  background: #3a3a4a;
+  height: 180px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.latest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
 }
 
 .latest-card h3 {
@@ -1470,7 +1465,7 @@ input::placeholder {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .hero-ad,
   .detailed-desc,
   .product-carousel,
@@ -1485,7 +1480,6 @@ input::placeholder {
     flex-direction: column;
   }
 
-  .hero-image-slide,
   .hero-text,
   .desc-text,
   .desc-image,
@@ -1494,10 +1488,16 @@ input::placeholder {
     width: 100%;
   }
 
+  .hero-image-slide{
+    display: none;
+  }
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
 
 @media (max-width: 768px) {
   .hero-ad,
@@ -1620,5 +1620,296 @@ input::placeholder {
 @media (max-width: 768px) {
   .nav-bar {
     padding: 25px 30px;
+  }
+}
+
+
+
+/* wikis page */
+
+/* Wiki Page Styles */
+
+.page-wikis {
+  background-image: none;
+  height: auto;
+}
+
+.wiki-page {
+  background: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Section 1: Header with Search */
+.wiki-header {
+  padding: 100px 120px 60px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: #E15CF2;
+  margin: 0;
+  flex: 1;
+}
+
+.search-container {
+  position: relative;
+  width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  padding-right: 60px;
+  background: rgba(42, 42, 58, 0.8);
+  border: 1px solid rgba(225, 92, 242, 0.3);
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #E15CF2;
+  box-shadow: 0 0 20px rgba(225, 92, 242, 0.3);
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E15CF2;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background: #c445d0;
+}
+
+/* Section 2: Wiki Categories */
+.wiki-categories {
+  padding: 60px 120px;
+  background: #0a0a0a;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: rgba(42, 42, 58, 0.6);
+  border: 1px solid rgba(225, 92, 242, 0.2);
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.category-card:hover {
+  border-color: #E15CF2;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(225, 92, 242, 0.2);
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(225, 92, 242, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.category-card:hover::before {
+  left: 100%;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #E15CF2;
+}
+
+.category-card p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-arrow {
+  color: #E15CF2;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.category-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+/* Section 3: FAQ Accordion */
+.wiki-faq {
+  padding: 60px 120px 100px;
+  background: #0a0a0a;
+}
+
+.wiki-faq h2 {
+  font-size: 2.5rem;
+  color: #E15CF2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border: 1px solid rgba(225, 92, 242, 0.2);
+  overflow: hidden;
+  background: rgba(42, 42, 58, 0.4);
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: rgba(225, 92, 242, 0.1);
+}
+
+.faq-question span:first-child {
+  font-size: 1.1rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.faq-arrow {
+  color: #E15CF2;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+  margin-left: 20px;
+  min-width: 20px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 30px;
+}
+
+.faq-answer p {
+  padding: 20px 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  border-top: 1px solid rgba(225, 92, 242, 0.1);
+}
+
+/* FAQ Accordion functionality (pure CSS) */
+.faq-toggle:checked ~ .faq-answer {
+  max-height: 300px;
+}
+
+.faq-toggle:checked ~ .faq-question .faq-arrow {
+  transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .wiki-header,
+  .wiki-categories,
+  .wiki-faq {
+    padding: 60px 40px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .wiki-header,
+  .wiki-categories,
+  .wiki-faq {
+    padding: 40px 20px;
+  }
+  
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .wiki-faq h2 {
+    font-size: 2rem;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-question {
+    padding: 15px 20px;
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
   }
 }
