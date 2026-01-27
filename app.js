@@ -78,3 +78,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// this is made by ai, not me, i dont know that much js :)
